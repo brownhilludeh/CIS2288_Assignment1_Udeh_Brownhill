@@ -8,7 +8,7 @@
     .container {
       margin: auto;
       width: 1024px;
-      max-width: 70%;
+      max-width: 60%;
       padding: 10px;
     }
 
@@ -17,20 +17,43 @@
       background-color: #cccccc;
       padding: 8px;
       font-weight: bold;
+  width: 100%;
     }
 
-    .row {
-      display: flex;
-      margin: 4px;
-      width: 100%;
-    }
+.row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 4px;
+}
 
-    .col-25 {
-      width: 25%;
-      flex: 25%;
-    }
+.col-25 {
+  flex: 0 0 25%;
+}
 
-    .col-75 {
-      flex: 75%;
-      width: 75%;
-    }
+.col-75 {
+  flex: 0 0 75%;
+}
+
+.col-75 input,
+.col-75 textarea,
+.col-75 select {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.floatEnd {
+  display: flex;
+  justify-content: flex-end;
+  /* instead of 'end' (explicit) */
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  width: 100%;
+  /* optional if parent flex already handles it */
+  text-align: right;
+  /* backup for non-flex children */
+}
