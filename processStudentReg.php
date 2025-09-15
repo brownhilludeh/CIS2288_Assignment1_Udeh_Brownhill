@@ -40,9 +40,8 @@ $totalCost = (COURSEPRICE * (int)$numberOfCoursePerSemester * (int)$numberOfSeme
         <h2>Student Registration</h2>
 
         <?php
-        echo "<p>Student registration processed at ";
-        echo date('H:i, jS F Y');
-        echo "</p>";
+        date_default_timezone_set('America/Halifax');
+        echo "<p>Student registration processed at " . date('H:i, jS F Y') . "</p>";
         echo "<hr>";
         echo "The student name is: " . $firstName . " " . $lastName . "<br>";
         echo "<br>";
