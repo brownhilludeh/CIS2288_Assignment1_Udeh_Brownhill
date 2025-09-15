@@ -50,9 +50,7 @@ $totalCost = (COURSEPRICE * (int)$numberOfCoursePerSemester * (int)$numberOfSeme
         echo "The student phone number is: " . $phone . "<br>";
         echo "<br>";
 
-        echo "The student's tuition cost is: $" . $totalCost .
-            ". They are taking " . $numberOfCoursePerSemester .
-            " courses per semester for " . $numberOfSemesters . " semesters.<br>";
+        echo "The student's tuition cost is: $" . $totalCost . ". They are taking " . $numberOfCoursePerSemester . " courses per semester for " . $numberOfSemesters . " semesters.<br>";
 
         ?>
 
